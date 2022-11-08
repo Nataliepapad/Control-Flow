@@ -2,6 +2,10 @@ import DayOfWeek.DayOfWeek;
 import ForLoop.SumOfTwoNumbers;
 import NumberInWord.NumberInWord;
 import NumberOfDaysInMonth.NumberOfDaysInMonth;
+import NumberPalindrome.NumberPalindrome;
+import SumDigits.SumDigits;
+import SumEvenDigit.SumEvenDigit;
+import SumFirstAndLastDigit.SumFirstAndLastDigit;
 import SumOdd.SumOdd;
 import Switch.Switch;
 
@@ -72,6 +76,41 @@ public class App {
         System.out.println(SumOdd.sumOdd(-2,20));
         System.out.println(SumOdd.sumOdd(30,100));
         System.out.println(SumOdd.sumOdd(17,17));
+        System.out.println("-------------------------------");
+
+        // Sum of Digits Testing
+        System.out.println("Sum of Digits");
+        System.out.println("The Sum of digits is " + SumDigits.sumDigits(128));
+        System.out.println("The Sum of digits is " + SumDigits.sumDigits(3));
+        System.out.println("The Sum of digits is " + SumDigits.sumDigits(3679));
+        System.out.println("The Sum of digits is " + SumDigits.sumDigits(-125));
+        System.out.println("-------------------------------");
+
+        // Number Palindrome Testing
+        System.out.println("Number Palindrome");
+        System.out.println(NumberPalindrome.isPalindrome(15436));
+        System.out.println(NumberPalindrome.isPalindrome(111));
+        System.out.println(NumberPalindrome.isPalindrome(-111));
+        System.out.println(NumberPalindrome.isPalindrome(1234321));
+        System.out.println(NumberPalindrome.isPalindrome(12344321));
+        System.out.println("-------------------------------");
+
+        // Sum First And Last Digit Testing
+        System.out.println("Sum First And Last Digit");
+        System.out.println(SumFirstAndLastDigit.sumFirstAndLastDigit(15436));
+        System.out.println(SumFirstAndLastDigit.sumFirstAndLastDigit(10));
+        System.out.println(SumFirstAndLastDigit.sumFirstAndLastDigit(-12423));
+        System.out.println(SumFirstAndLastDigit.sumFirstAndLastDigit(1001));
+        System.out.println(SumFirstAndLastDigit.sumFirstAndLastDigit(8));
+        System.out.println("-------------------------------");
+
+        // Sum Even Digit Testing
+        System.out.println("Sum Even Digit");
+        System.out.println(SumEvenDigit.getEvenDigitSum(15436));
+        System.out.println(SumEvenDigit.getEvenDigitSum(24680));
+        System.out.println(SumEvenDigit.getEvenDigitSum(-205));
+        System.out.println(SumEvenDigit.getEvenDigitSum(5));
+        System.out.println(SumEvenDigit.getEvenDigitSum(143267));
         System.out.println("-------------------------------");
     }
 }
